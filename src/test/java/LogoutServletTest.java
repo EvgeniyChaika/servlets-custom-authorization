@@ -27,8 +27,6 @@ public class LogoutServletTest {
     @Mock
     private RequestDispatcher requestDispatcher;
 
-    private static final String path = "/view/login.jsp";
-
     @Before
     public void setUp() throws Exception {
         MockitoAnnotations.initMocks(this);
