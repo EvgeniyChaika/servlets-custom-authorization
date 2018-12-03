@@ -7,23 +7,26 @@ import com.chaika.model.enums.Role;
  */
 public class User {
 
-    private Long id;
+    private Integer id;
     private String login;
     private String password;
     private Role role;
 
-    public User(Long id, String login, String password, Role role) {
+    public User() {
+    }
+
+    public User(Integer id, String login, String password, Role role) {
         this.id = id;
         this.login = login;
         this.password = password;
         this.role = role;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

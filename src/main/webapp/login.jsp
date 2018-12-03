@@ -11,6 +11,13 @@
     <title>Login</title>
 </head>
 <body>
-
+<div class="form">
+    <h1>Enter into system</h1>
+    <form method="post" action="">
+        <input type="text" required placeholder="Login" name="login"><br>
+        <input type="password" required placeholder="Password" name="password"><br><br>
+        <input class="button" type="submit" name="Enter">
+    </form>
+</div>
 </body>
 </html>
