@@ -13,30 +13,6 @@ public class UserDAO {
 
     private final List<User> store = new ArrayList<>();
 
-    public User getById(int id) {
-        User result = new User();
-        result.setId(-1);
-
-        for (User user : store) {
-            if (user.getId() == id) {
-                result = user;
-            }
-        }
-        return result;
-    }
-
-    public User getUserByLoginPassword(final String login, String password) {
-        User result = new User();
-        result.setId(-1);
-
-        for (User user : store) {
-            if (user.getLogin().equals(login) && user.getPassword().equals(password)) {
-                result = user;
-            }
-        }
-        return result;
-    }
-
     public boolean add(final User user) {
         for (User usr : store) {
             if (usr.getLogin().equals(user.getLogin()) && usr.getPassword().equals(user.getPassword())) {
